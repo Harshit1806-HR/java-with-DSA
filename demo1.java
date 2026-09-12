@@ -1,0 +1,45 @@
+
+ enum Status {
+    Running, testing, complining, success;
+    
+}
+
+public class demo1{
+    public static void main(String[] args) {
+    Status s = Status.success;
+    //switch statement in enum
+    switch (s) {
+        case Running:
+            System.out.println("all good");
+            break;
+    case testing:
+            System.out.println("average");
+            break;
+    case complining:
+            System.out.println("underprogress");
+            break;
+        default:
+            System.out.println("done");
+            break;
+    } 
+
+
+
+//if else statemnt use in enum
+
+    // if (s==Status.Running) {
+    //     System.err.println("all good");
+    // }
+    // else if (s==Status.testing) {
+    //     System.err.println("average");
+    // }
+    // else if (s==Status.complining) {
+    //     System.err.println("so close ");
+    // }
+    // else if (s==Status.success) {
+    //     System.err.println("excellent");
+    // }
+    //  else
+    //   System.err.println("HR");
+}
+}
